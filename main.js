@@ -4,6 +4,8 @@ const rl = readline.createInterface({
 	output: process.stdout
 });
 
+const rpcfunc = require('./internal/rpcfunc.js');
+
 console.log("Welcome to DiscordRPC Maker!")
 console.log("")
 rl.question('[1] Create RPC\n' + '[2] Edit RPC\n' + '[3] Delete RPC\n' + '[4] Settings\n' + '[5] Exit\n' + 'Please Enter >> ', (ans) => {
@@ -15,15 +17,19 @@ rl.question('[1] Create RPC\n' + '[2] Edit RPC\n' + '[3] Delete RPC\n' + '[4] Se
 		switch (number) {
 			case 1:
 				console.log("1");
+				rpcfunc.create('test');
 				break;
 			case 2:
 				console.log("2");
+				rpcfunc.edit('test2')
 				break;
 			case 3:
 				console.log("3");
+				rpcfunc.del('test3')
 				break;
 			case 4:
 				console.log("4");
+				rpcfunc.settings('test4')
 				break;
 			case 5:
 				console.log("(5)Exit");
