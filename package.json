@@ -1,5 +1,5 @@
 {
-  "name": "DiscordRPC",
+  "name": "discord-rpc-tool",
   "version": "1.0.0",
   "description": "Lightweight Discord RPC Maker",
   "main": "main.js",
